@@ -1,0 +1,16 @@
+<div class="sent">
+    <div>
+        <table border="1">
+            <tr class="sentmails">
+                <th>From</th>
+                <th>Subject Name</th>
+                <th>Received Date</th>
+            </tr>
+            <tr *ngFor="let mail of mails">
+                <td>{{mail.from}}</td>
+                <td>{{mail.subjectName}}</td>
+                <td>{{mail.receivedDate}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

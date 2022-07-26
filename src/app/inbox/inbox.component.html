@@ -1,0 +1,22 @@
+<div class="inbox">
+    <span class="team" [ngClass]="projectTeam?'active':'inactive'" (click)="showProjectTeam()">Project Team</span>
+    <span class="team" [ngClass]="hrTeam?'active':'inactive'" (click)="showHrTeam()">HR Team</span>
+    <span class="team" [ngClass]="financeTeam?'active':'inactive'" (click)="showFinanceTeam()">Finance Team</span>
+    <button class="mark" *ngIf="emailsMarked" (click)="markAsImportant()">Mark as Important</button>
+    <div class="mails" *ngIf="showTable">
+        <table border="1">
+            <tr class="heading">
+                <th></th>
+                <th>From</th>
+                <th>Subject Name</th>
+                <th>Received Date</th>
+            </tr>
+            <tr *ngFor="let mail of generalMails;let i=index;">
+                <td><input type="checkbox" (change)="onChecked(i)"></td>
+                <td>{{mail.from}}</td>
+                <td>{{mail.subjectName}}</td>
+                <td>{{mail.receivedDate}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

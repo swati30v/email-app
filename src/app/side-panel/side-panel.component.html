@@ -1,0 +1,5 @@
+<div class="side-panel">
+    <div class="mail-type" [class.active]="isInboxActive" (click)="goToInbox()"><a routerLink="inbox">Inbox</a></div>
+    <div class="mail-type" [class.active]="isSentActive"  (click)="goToSent()"><a routerLink="sent">Sent</a></div>
+    <div class="mail-type" [class.active]="isImportantActive"  (click)="goToImportant()"><a routerLink="important">Important mails</a></div>
+</div>

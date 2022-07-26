@@ -1,0 +1,14 @@
+<div class="impMails" *ngIf="showTable">
+    <table border="1">
+        <tr class="heading">
+            <th>From</th>
+            <th>Subject Name</th>
+            <th>Received Date</th>
+        </tr>
+        <tr *ngFor="let mail of importantMails">
+            <td>{{mail.from}}</td>
+            <td>{{mail.subjectName}}</td>
+            <td>{{mail.receivedDate}}</td>
+        </tr>
+    </table>
+</div>

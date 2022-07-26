@@ -1,0 +1,28 @@
+.inbox{
+    margin: 15px 30px;
+    width: 100%;
+}
+
+.team{
+    padding: 3px;
+    border: 1px solid;
+}
+.mark{
+    margin-left: 20px;
+    background-color:dodgerblue;
+}
+.heading{
+    background-color: rgb(188, 222, 136);
+}
+table{
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.active{
+    background-color:#afdf66;
+}
+
+.inactive{
+    background-color: pink;
+}
